@@ -13,6 +13,7 @@ import { SimpleNodelist } from "./simplenodelist.js";
 import { Sidebar } from "./sidebar.js";
 import { Tabs } from "./tabs.js";
 import { Title } from "./title.js";
+import { Siteselector } from "./siteselector.js";
 import { Main as Infobox } from "./infobox/main.js";
 import { FilterGui } from "./filters/filtergui.js";
 import { HostnameFilter } from "./filters/hostname.js";
@@ -128,6 +129,7 @@ export const Gui = function (language: ReturnType<typeof Language>) {
   let tabs = Tabs();
   let overview = Container();
   let legend = Legend(language);
+  let siteselector = Siteselector();
   let newnodeslist = SimpleNodelist("new", "firstseen", _.t("node.new"));
   let lostnodeslist = SimpleNodelist("lost", "lastseen", _.t("node.missing"));
   let nodelist = Nodelist();
@@ -145,6 +147,7 @@ export const Gui = function (language: ReturnType<typeof Language>) {
 
   sidebar.add(header);
   header.add(legend);
+  header.add(siteselector);
 
   overview.add(newnodeslist);
   overview.add(lostnodeslist);

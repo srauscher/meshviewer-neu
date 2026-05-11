@@ -59,7 +59,8 @@
     "actual": "Current",
     "stats": "Statistics",
     "about": "About",
-    "toggle": "Toggle Sidebar"
+    "toggle": "Toggle Sidebar",
+    "yourCommunity": "Your Community"
   },
   "button": {
     "switchView": "Switch view",

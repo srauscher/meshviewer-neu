@@ -59,7 +59,8 @@
     "actual": "Aktuell",
     "stats": "Statistiken",
     "about": "Über",
-    "toggle": "Seitenleiste anzeigen/ausblenden"
+    "toggle": "Seitenleiste anzeigen/ausblenden",
+    "yourCommunity": "Deine Community"
   },
   "button": {
     "switchView": "Ansicht wechseln",

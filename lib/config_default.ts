@@ -40,6 +40,12 @@ interface Icon {
 export interface Domain {
   name: string;
   domain: string;
+  url: string;
+}
+
+export interface allCommunities {
+  name: string;
+  url: string;
 }
 
 interface Info {
@@ -177,12 +183,14 @@ export interface Config {
   eol_text?: string;
   deprecation_text?: string;
   domainNames: Domain[];
+  allCommunities: allCommunities;
   node_custom: string; // Custom node replacement regex
   devicePictures: string;
   devicePicturesSource: string;
   devicePicturesLicense: string;
   geo?: Geo[];
   fixedCenter: LatLngBoundsExpression;
+  siteSelector_enabled: boolean;
 }
 
 export const config: Config = {
@@ -474,6 +482,7 @@ export const config: Config = {
   eol_text: undefined,
   deprecation_text: undefined,
   domainNames: [],
+  allCommunities: undefined,
   globalInfos: [],
   linkTypeInfos: [],
   linkInfos: [],
@@ -483,4 +492,5 @@ export const config: Config = {
   devicePicturesSource:
     "<a href='https://github.com/freifunk/device-pictures'>https://github.com/freifunk/device-pictures</a>",
   devicePicturesLicense: "CC-BY-NC-SA 4.0",
+  siteSelector_enabled: false
 };

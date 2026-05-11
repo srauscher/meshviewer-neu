@@ -1,0 +1,16 @@
+@use "sass:color";
+@use "variables";
+
+.sites {
+  padding: 0 16px 1em;
+
+  label {
+    margin-right: 5px;
+  }
+
+  select {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid variables.$color-primary;
+  }
+}
